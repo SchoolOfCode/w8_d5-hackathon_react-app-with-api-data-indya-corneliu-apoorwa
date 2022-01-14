@@ -1,0 +1,23 @@
+body {
+  background-color: whitesmoke;
+}
+
+img {
+  width: 50%;
+}
+
+.news-item {
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  border-width: 1px;
+  width: 30%;
+  margin: 20px;
+  float: left;
+  background-color: white;
+}
+
+input {
+  margin: 50px;
+  margin-right: 0;
+}

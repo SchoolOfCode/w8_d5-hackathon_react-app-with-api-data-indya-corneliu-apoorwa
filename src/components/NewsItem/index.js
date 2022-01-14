@@ -2,7 +2,7 @@ import React from "react";
 
 function NewsItem(props) {
   return (
-    <div>
+    <div className="news-item ">
       <h2>{props.title}</h2>
       <a href={props.url}> Click here for full article</a>
       <p>{props.description}</p>

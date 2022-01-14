@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NewsItem from "../NewsItem";
+import "./newsresults.css";
 
 function NewsResult() {
   //const [title, setTitle] = useState([]);
@@ -23,8 +24,25 @@ function NewsResult() {
     fetchArticle();
   }, []);
 
+  const [input, setInput] = useState("");
+  const [search, setSearch] = useState("");
+
+  function handleChange(event) {
+    setInput(event.target.value);
+  }
+
+  function handleClick() {
+    setSearch(input);
+    setInput("");
+  }
+
   return (
     <div>
+      <header>
+        <input onChange={handleChange} placeholder="search..."></input>
+        <button onClick={handleClick}>Search</button>
+      </header>
+      <h5>You searched for: {search}</h5>
       {articles.map((article) => (
         <NewsItem
           title={article.title}
