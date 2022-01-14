@@ -1,12 +1,12 @@
 import React from "react";
 
-function NewsItem({ title, description, url, urlToImage }) {
+function NewsItem(props) {
   return (
     <div>
-      <h2>title</h2>
-      <p>{description}</p>
-      <h5>{url}</h5>
-      <img src={urlToImage} alt="newsitem" />
+      <h2>{props.title}</h2>
+      <a href={props.url}></a>
+      <p>{props.description}</p>
+      <img src={props.image}></img>
     </div>
   );
 }
