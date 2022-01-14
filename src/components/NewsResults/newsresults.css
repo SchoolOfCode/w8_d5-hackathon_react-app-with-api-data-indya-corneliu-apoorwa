@@ -11,7 +11,8 @@ img {
   border-color: black;
   padding: 20px;
   border-width: 1px;
-  width: 30%;
+  width: 500px;
+  height: 400px;
   margin: 20px;
   float: left;
   background-color: white;
@@ -19,5 +20,12 @@ img {
 
 input {
   margin: 50px;
-  margin-right: 0;
+  margin-right: 3px;
+}
+
+h1 {
+  color: white;
+  background-color: orange;
+  padding: 30px;
+  margin-top: 0;
 }

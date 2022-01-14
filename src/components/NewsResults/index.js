@@ -33,12 +33,12 @@ function NewsResult() {
 
   function handleClick() {
     setSearch(input);
-    setInput("");
   }
 
   return (
     <div>
       <header>
+        <h1> Get your daily dose of news!</h1>
         <input onChange={handleChange} placeholder="search..."></input>
         <button onClick={handleClick}>Search</button>
       </header>
