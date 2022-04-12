@@ -39,9 +39,9 @@ function NewsResult() {
     <div>
       <header>
         <h1> Get your daily dose of news!</h1>
-        <input onChange={handleChange} placeholder="search..."></input>
-        <button onClick={handleClick}>Search</button>
       </header>
+      <input onChange={handleChange} placeholder="search..."></input>
+      <button onClick={handleClick}>Search</button>
       <h5>You searched for: {search}</h5>
       {articles.map((article) => (
         <NewsItem
