@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import NewsItem from "../NewsItem";
 import "./newsresults.css";
+import "tachyons";
+import "./newsresults.css";
 
 function NewsResult() {
   //const [title, setTitle] = useState([]);
@@ -43,14 +45,20 @@ function NewsResult() {
       <input onChange={handleChange} placeholder="search..."></input>
       <button onClick={handleClick}>Search</button>
       <h5>You searched for: {search}</h5>
-      {articles.map((article) => (
-        <NewsItem
-          title={article.title}
-          description={article.description}
-          image={article.urlToImage}
-          url={article.url}
-        />
-      ))}
+      <div className=" flex flex-wrap justify-center items-start">
+        {/* <div class=" flex w-25 pa3 mr2"> */}
+        {articles.map((article) => (
+          <NewsItem
+            title={article.title}
+            description={article.description}
+            image={article.urlToImage}
+            url={article.url}
+          />
+
+          // </div>
+        ))}
+        {/* </div> */}
+      </div>
     </div>
   );
 }
